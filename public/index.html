@@ -1,0 +1,54 @@
+<!-- index.html -->
+<!doctype html>
+
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<html >
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Instagram - Powered by Satellizer</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootswatch/3.3.0/paper/bootstrap.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+    <link rel="stylesheet" href="client/css/style.css">
+
+    <title>smokemeup</title>
+
+    
+</head>
+
+<body ng-app="smokemeup">
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <a href="/" class="navbar-brand"><i class="ion-images"></i> smokemeup</a>
+          <li><a href="#/">Home</a></li>
+          <li><a href="#/login">Log in</a></li>
+          <li><a href="#/signup">Sign up</a></li>
+          <li><a ng-click="logout()" href="">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div ng-view></div>
+
+   
+   <!-- SPELLS -->
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- load jquery -->
+    <script src="client/vendor/angular/angular.min.js"></script><!-- load angular -->
+    
+    <script src="client/vendor/angular/angular-messages/angular-messages.min.js"></script>
+    <script src="client/vendor/angular/angular-route/angular-route.min.js"></script>
+    
+    <script src="client/vendor/satellizer.min.js"></script>
+    <script src="client/vendor/angular/main.js"></script>
+
+    <script src="client/controllers/home.js"></script>
+    <script src="client/controllers/navbar.js"></script>
+    <script src="client/controllers/login.js"></script>
+    <script src="client/controllers/signup.js"></script>
+    <script src="client/controllers/details.js"></script>
+    <script src="client/directives/serverError.js"></script>
+</body>
+</html>
